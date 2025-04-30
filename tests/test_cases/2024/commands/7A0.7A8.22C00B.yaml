@@ -1,0 +1,24 @@
+command_id: 7A0.7A8.22C00B
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    7A8102462C00BFFFFFF
+    7A821F8000000000200
+    7A82200000002000000
+    7A82300020000000002
+    7A824FFFFFFFFFFFFFF
+    7A825FFFFAAAAAAAAAA
+  expected_values:
+    KONA_TP_FL: 0
+    KONA_TP_FR: 0
+    KONA_TP_RL: 0
+    KONA_TP_RR: 0
+    KONA_TT_FL: 0
+    KONA_TT_FR: 0
+    KONA_TT_RL: 0
+    KONA_TT_RR: 0
+    KONA_TW_FL: 0
+    KONA_TW_FR: 0
+    KONA_TW_RL: 0
+    KONA_TW_RR: 0
