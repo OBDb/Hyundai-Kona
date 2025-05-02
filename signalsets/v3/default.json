@@ -3,10 +3,10 @@
   "signals": [
     {"id": "KONA_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear left door open?"},
     {"id": "KONA_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front left door open?"},
-    {"id": "KONA_HANDBRAKE",      "path": "Chassis",   "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "KONA_HANDBRAKE",      "path": "Control",   "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake engaged?"},
     {"id": "KONA_DOOR_FR",        "path": "Doors",     "fmt": {"bix": 36, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front right door open?"},
     {"id": "KONA_DOOR_RR",        "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear right door open?"},
-    {"id": "KONA_TRUNK",          "path": "Body",      "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "KONA_TRUNK",          "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Trunk open?"},
     {"id": "KONA_BELT_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 40, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
     {"id": "KONA_BELT_DRIVER",    "path": "Seatbelts", "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Driver seatbelt latched?"},
     {"id": "KONA_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defogging?"}
@@ -45,18 +45,17 @@
   ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1,
   "signals": [
-    {"id": "KONA_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                     "unit": "liters"     }, "name": "Fuel level (volume)"},
-    {"id": "KONA_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,         "div": 12.8, "unit": "volts"      }, "name": "Cluster Voltage"},
-    {"id": "KONA_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,              "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
-    {"id": "KONA_ODO",             "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 4294967295,              "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
-    {"id": "KONA_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 4294967295,              "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+    {"id": "KONA_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level (volume)"},
+    {"id": "KONA_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "Cluster Voltage"},
+    {"id": "KONA_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
+    {"id": "KONA_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "cmd": {"22": "4000"}, "freq": 1,
   "signals": [
-    {"id": "KONA_TIRE_FL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 215, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "KONA_TIRE_FR_VSS", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 255, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "KONA_TIRE_RL_VSS", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 255, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
-    {"id": "KONA_TIRE_RR_VSS", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 255, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+    {"id": "KONA_TIRE_FL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "KONA_TIRE_FR_VSS", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "KONA_TIRE_RL_VSS", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "KONA_TIRE_RR_VSS", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
   "signals": [
@@ -71,19 +70,19 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E001"}, "freq": 1,
   "signals": [
-    {"id": "KONA_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 207, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake Air Temperature"},
-    {"id": "KONA_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+    {"id": "KONA_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake Air Temperature"},
+    {"id": "KONA_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine Oil Temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E002"}, "freq": 5,
   "signals": [
-    {"id": "KONA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 1"},
-    {"id": "KONA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 2"},
-    {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
-    {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.7, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
+    {"id": "KONA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 1"},
+    {"id": "KONA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 2"},
+    {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
+    {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E004"}, "freq": 5,
   "signals": [
-    {"id": "HYUNDAI_22E004", "path": "Unknown", "fmt": { "len": 8, "max": 100, "unit": "scalar" }, "name": "Unknown"}
+    {"id": "HYUNDAI_22E004", "path": "Engine.Unknown", "fmt": { "len": 8, "max": 100, "unit": "scalar" }, "name": "Unknown"}
   ]},
 { "hdr": "7E1", "cmd": {"22": "01A4"}, "freq": 1,
   "signals": [
