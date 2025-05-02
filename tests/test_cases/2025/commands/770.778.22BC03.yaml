@@ -1,0 +1,24 @@
+command_id: 770.778.22BC03
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100862BC03D00000
+    778210000AAAAAAAAAA
+  expected_values:
+    KONA_DOOR_FL: 0
+    KONA_DOOR_FR: 0
+    KONA_DOOR_RL: 0
+    KONA_DOOR_RR: 0
+    KONA_HANDBRAKE: 0
+    KONA_TRUNK: 0
+- response: |-
+    778100862BC03D00000
+    778210003AAAAAAAAAA
+  expected_values:
+    KONA_DOOR_FL: 0
+    KONA_DOOR_FR: 0
+    KONA_DOOR_RL: 0
+    KONA_DOOR_RR: 0
+    KONA_HANDBRAKE: 0
+    KONA_TRUNK: 1
