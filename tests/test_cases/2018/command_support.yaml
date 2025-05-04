@@ -40,6 +40,8 @@ supported_commands_by_ecu:
   - 0151:FUEL_TYP
   - 0156:LGSO2FT1
 unsupported_commands_by_ecu:
+  770:
+  - 770.778.22BC03
   7A0:
   - 7A0.7A8.22C00B
   7B3:
