@@ -18,6 +18,20 @@ test_cases:
     KONA_REVERSE_GEAR: 0
 - response: |-
     778100B62BC04B53F74
+    77821E204000E42AAAA
+  expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B53F74
+    77821E205000E42AAAA
+  expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04B53F74
     77821E20D000E42AAAA
   expected_values:
     KONA_LOCK_FL: 0
@@ -26,6 +40,13 @@ test_cases:
 - response: |-
     778100B62BC04B53F74
     77821E20D002E42AAAA
+  expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04B53F74
+    77821E20D802E42AAAA
   expected_values:
     KONA_LOCK_FL: 0
     KONA_LOCK_FR: 0
