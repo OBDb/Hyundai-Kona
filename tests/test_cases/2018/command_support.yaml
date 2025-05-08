@@ -43,6 +43,7 @@ unsupported_commands_by_ecu:
   770:
   - 770.778.22BC03
   - 770.778.22BC04
+  - 770.778.22BC05
   7A0:
   - 7A0.7A8.22C00B
   7B3:
@@ -52,3 +53,4 @@ unsupported_commands_by_ecu:
   7E0:
   - 7E0.7E8.22E001
   - 7E0.7E8.22E002
+  - 7E0.7E8.22E004
