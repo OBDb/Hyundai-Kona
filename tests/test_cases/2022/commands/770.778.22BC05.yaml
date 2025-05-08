@@ -24,6 +24,11 @@ test_cases:
     KONA_HAZARD_SW: 80
 - response: |-
     778100B62BC057F1320
+    778210050400000AAAA
+  expected_values:
+    KONA_HAZARD_SW: 80
+- response: |-
+    778100B62BC057F1320
     7782100A0000000AAAA
   expected_values:
     KONA_HAZARD_SW: 160
