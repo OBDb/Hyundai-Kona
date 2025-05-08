@@ -40,7 +40,7 @@ test_cases:
     KONA_TRUNK: 0
 - response: |-
     778100B62BC03FFEE3C
-    77821730A662C02AAAA
+    77821730A660002AAAA
   expected_values:
     KONA_BELT_DRIVER: 1
     KONA_BELT_PASSENGER: 0
