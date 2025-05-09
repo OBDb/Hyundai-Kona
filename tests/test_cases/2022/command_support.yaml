@@ -63,4 +63,4 @@ unsupported_commands_by_ecu:
   770:
   - 770.778.22BC07
   7B3:
-  - 7B3.7BB.220100
+  - 7B3.7BB.220100:KONA_TEMP_EXT,KONA_TEMP_INT,KONA_VSS
