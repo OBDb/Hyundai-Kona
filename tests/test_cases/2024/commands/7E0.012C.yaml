@@ -5,3 +5,6 @@ test_cases:
 - response: 7E803412C00
   expected_values:
     EGR_PCT: 0
+- response: 7E803412C0A
+  expected_values:
+    EGR_PCT: 3.92157
