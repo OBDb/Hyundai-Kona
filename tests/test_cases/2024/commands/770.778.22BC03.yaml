@@ -22,3 +22,13 @@ test_cases:
     KONA_DOOR_RR: 0
     KONA_HANDBRAKE: 0
     KONA_TRUNK: 1
+- response: |-
+    778100862BC03F00000
+    778210007AAAAAAAAAA
+  expected_values:
+    KONA_DOOR_FL: 0
+    KONA_DOOR_FR: 0
+    KONA_DOOR_RL: 0
+    KONA_DOOR_RR: 1
+    KONA_HANDBRAKE: 0
+    KONA_TRUNK: 1
