@@ -1,6 +1,4 @@
 command_id: 7E0.7E8.22E004
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     7E8101A62E004FFFF07
@@ -14,6 +12,27 @@ test_cases:
     7E82100F8D8C173F172
     7E822F080F0E0B0D0F0
     7E823001130111000AA
+  expected_values:
+    HYUNDAI_22E004: 100
+- response: |-
+    7E8101A62E004FFFF07
+    7E82100FBD0C573F172
+    7E822F080F0E0B0D0F0
+    7E823001030101000AA
+  expected_values:
+    HYUNDAI_22E004: 100
+- response: |-
+    7E8101A62E004FFFF07
+    7E82100FBD1C570F172
+    7E822F080F0E0B0D0F0
+    7E823001030101000AA
+  expected_values:
+    HYUNDAI_22E004: 100
+- response: |-
+    7E8101A62E004FFFF07
+    7E82100FCD9C177F276
+    7E822FA80F0E2B0D4F0
+    7E823001033101000AA
   expected_values:
     HYUNDAI_22E004: 100
 - response: |-

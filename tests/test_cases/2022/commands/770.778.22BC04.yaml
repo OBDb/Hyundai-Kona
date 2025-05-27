@@ -1,6 +1,4 @@
 command_id: 770.778.22BC04
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     778100B62BC04F53F74
@@ -47,6 +45,13 @@ test_cases:
 - response: |-
     778100B62BC04F53F74
     77821E20D002E42AAAA
+  expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04F53F74
+    77821E20D800E42AAAA
   expected_values:
     KONA_LOCK_FL: 0
     KONA_LOCK_FR: 0
