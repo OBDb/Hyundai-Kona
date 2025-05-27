@@ -1,10 +1,211 @@
 command_id: 7E0.012F
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: 7E803412F10
   expected_values:
     FLI: 6.27451
-- response: 7E803412FD6
+- response: 7E803412FDE
   expected_values:
-    FLI: 83.92157
+    FLI: 87.05882
+- response: |-
+    > 770.778.22BC03
+    CAN ERROR
+    NO DATA
+    > 7A0.7A8.22C00B
+    CAN ERROR
+    NO DATA
+    > 7B3.7BB.220100
+    CAN ERROR
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F40
+  expected_values:
+    FLI: 25.09804
+- response: |-
+    > 770.778.22BC03
+    NO DATA
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7B3.7BB.220100
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F0F
+  expected_values:
+    FLI: 5.88235
+- response: |-
+    > 770.778.22BC03
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FBB
+  expected_values:
+    FLI: 73.33333
+- response: |-
+    > 770.778.22BC04
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F11
+  expected_values:
+    FLI: 6.66667
+- response: |-
+    > 770.778.22BC05
+    NO DATA
+    > 770.778.22BC03
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F1B
+  expected_values:
+    FLI: 10.58824
+- response: |-
+    > 770.778.22BC05
+    NO DATA
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 770.778.22BC04
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F28
+  expected_values:
+    FLI: 15.68627
+- response: |-
+    > 770.778.22BC05
+    NO DATA
+    > 7B3.7BB.220100
+    NO DATA
+    > 770.778.22BC03
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FC4
+  expected_values:
+    FLI: 76.86275
+- response: |-
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F26
+  expected_values:
+    FLI: 14.90196
+- response: |-
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FD5
+  expected_values:
+    FLI: 83.52941
+- response: |-
+    > 7B3.7BB.220100
+    NO DATA
+    > 770.778.22BC05
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 770.778.22BC03
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FCF
+  expected_values:
+    FLI: 81.17647
+- response: |-
+    > 7B3.7BB.220100
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 770.778.22BC04
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FDD
+  expected_values:
+    FLI: 86.66667
+- response: |-
+    > 7B3.7BB.220100
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F0F
+  expected_values:
+    FLI: 5.88235
+- response: |-
+    > 7D4.7DC.220101
+    NO DATA
+    > 770.778.22BC05
+    NO DATA
+    > 770.778.22BC04
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F0F
+  expected_values:
+    FLI: 5.88235
+- response: |-
+    > 7E0.7E8.012F
+    7E803412F0F
+  expected_values:
+    FLI: 5.88235
+- response: |-
+    > 7E0.7E8.012F
+    7E803412F25
+  expected_values:
+    FLI: 14.5098
+- response: |-
+    > 7E0.7E8.012F
+    7E803412FDD
+  expected_values:
+    FLI: 86.66667
+- response: |-
+    NO DATA
+    > 770.778.22BC03
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FD5
+  expected_values:
+    FLI: 83.52941
+- response: |-
+    NO DATA
+    > 770.778.22BC05
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 7B3.7BB.220100
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FBD
+  expected_values:
+    FLI: 74.11765
+- response: |-
+    NO DATA
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F10
+  expected_values:
+    FLI: 6.27451
+- response: |-
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 7A0.7A8.22C00B
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F1A
+  expected_values:
+    FLI: 10.19608
+- response: |-
+    NO DATA
+    > 7D4.7DC.220101
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FD1
+  expected_values:
+    FLI: 81.96078
+- response: |-
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412F0F
+  expected_values:
+    FLI: 5.88235
+- response: |-
+    NO DATA
+    > 7E0.7E8.012F
+    7E803412FC6
+  expected_values:
+    FLI: 77.64706

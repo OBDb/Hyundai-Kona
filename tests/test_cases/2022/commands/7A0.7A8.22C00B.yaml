@@ -1,6 +1,4 @@
 command_id: 7A0.7A8.22C00B
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     7A8101762C00BFFFF00
@@ -212,15 +210,15 @@ test_cases:
     KONA_TW_RR: 1
 - response: |-
     7A8101762C00BFFFF00
-    7A82100B04E0100BB45
-    7A8220100BD470100C4
-    7A8234E0100AAAAAAAA
+    7A82100F3500100C24F
+    7A8220100B13B0100C1
+    7A8234C0100AAAAAAAA
   expected_values:
-    KONA_TP_FL: 35.2
-    KONA_TP_FR: 13.8
+    KONA_TP_FL: 48.6
+    KONA_TP_FR: 15.8
     KONA_TP_RL: 0
     KONA_TP_RR: 0.2
-    KONA_TT_FL: 78
+    KONA_TT_FL: 80
     KONA_TT_FR: 1
     KONA_TT_RR: 0
     KONA_TW_FL: 0
