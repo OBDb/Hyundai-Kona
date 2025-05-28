@@ -16,6 +16,13 @@ test_cases:
     KONA_REVERSE_GEAR: 0
 - response: |-
     778100B62BC04B53F74
+    77821E20C000E02AAAA
+  expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04B53F74
     77821E20D802E42AAAA
   expected_values:
     KONA_LOCK_FL: 0
