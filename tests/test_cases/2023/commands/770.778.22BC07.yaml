@@ -1,0 +1,12 @@
+command_id: 770.778.22BC07
+test_cases:
+- response: |-
+    778100B62BC07000003
+    77821FC00000000AAAA
+  expected_values:
+    HYUNDAI_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07000003
+    77821FC00000004AAAA
+  expected_values:
+    HYUNDAI_DEFOG_LIGHT_V2: 0
