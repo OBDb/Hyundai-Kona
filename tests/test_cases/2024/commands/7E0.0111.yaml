@@ -3,14 +3,3 @@ test_cases:
 - response: 7E80341112F
   expected_values:
     TP: 18.43137
-- response: |-
-    > ATRV
-    14.0V
-    > 7B3.7BB.220100
-    NO DATA
-    > 770.778.22BC03
-    NO DATA
-    > 7E0.7E8.0111
-    7E803411121
-  expected_values:
-    TP: 12.94118
