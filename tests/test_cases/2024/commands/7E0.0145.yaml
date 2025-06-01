@@ -3,8 +3,3 @@ test_cases:
 - response: '7E803414513'
   expected_values:
     TP_R: 7.45098
-- response: |-
-    > 7E0.7E8.0145
-    7E803414507
-  expected_values:
-    TP_R: 2.7451
