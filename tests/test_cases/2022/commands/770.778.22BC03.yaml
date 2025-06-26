@@ -1,9 +1,18 @@
 command_id: 770.778.22BC03
 test_cases:
-- response: |-
+- expected_values:
+    KONA_BELT_DRIVER: 0
+    KONA_BELT_PASSENGER: 0
+    KONA_DOOR_FL: 0
+    KONA_DOOR_FR: 0
+    KONA_DOOR_RL: 0
+    KONA_DOOR_RR: 0
+    KONA_HANDBRAKE: 0
+    KONA_TRUNK: 0
+  response: |-
     778100B62BC03FFEE74
     778217300040000AAAA
-  expected_values:
+- expected_values:
     KONA_BELT_DRIVER: 0
     KONA_BELT_PASSENGER: 0
     KONA_DOOR_FL: 0
@@ -12,22 +21,10 @@ test_cases:
     KONA_DOOR_RR: 0
     KONA_HANDBRAKE: 0
     KONA_TRUNK: 0
-- response: |-
+  response: |-
     778100B62BC03FFEE74
     778217300042C00AAAA
-  expected_values:
-    KONA_BELT_DRIVER: 0
-    KONA_BELT_PASSENGER: 0
-    KONA_DOOR_FL: 0
-    KONA_DOOR_FR: 0
-    KONA_DOOR_RL: 0
-    KONA_DOOR_RR: 0
-    KONA_HANDBRAKE: 0
-    KONA_TRUNK: 0
-- response: |-
-    778100B62BC03FFEE74
-    778217300662C00AAAA
-  expected_values:
+- expected_values:
     KONA_BELT_DRIVER: 1
     KONA_BELT_PASSENGER: 0
     KONA_DOOR_FL: 0
@@ -36,10 +33,10 @@ test_cases:
     KONA_DOOR_RR: 0
     KONA_HANDBRAKE: 0
     KONA_TRUNK: 0
-- response: |-
+  response: |-
     778100B62BC03FFEE74
-    77821730A640000AAAA
-  expected_values:
+    778217300662C00AAAA
+- expected_values:
     KONA_BELT_DRIVER: 1
     KONA_BELT_PASSENGER: 0
     KONA_DOOR_FL: 0
@@ -48,10 +45,10 @@ test_cases:
     KONA_DOOR_RR: 0
     KONA_HANDBRAKE: 0
     KONA_TRUNK: 0
-- response: |-
+  response: |-
     778100B62BC03FFEE74
-    778217380040000AAAA
-  expected_values:
+    77821730A640000AAAA
+- expected_values:
     KONA_BELT_DRIVER: 0
     KONA_BELT_PASSENGER: 0
     KONA_DOOR_FL: 0
@@ -60,3 +57,6 @@ test_cases:
     KONA_DOOR_RR: 0
     KONA_HANDBRAKE: 0
     KONA_TRUNK: 0
+  response: |-
+    778100B62BC03FFEE74
+    778217380040000AAAA
