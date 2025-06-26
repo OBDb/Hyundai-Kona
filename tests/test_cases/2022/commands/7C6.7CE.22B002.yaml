@@ -1,83 +1,83 @@
 command_id: 7C6.7CE.22B002
 test_cases:
-- response: |-
-    7CE100F62B002E00000
-    7CE210008A20135BF00
-    7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 12.65625
     KONA_FLI_VOL: 8
     KONA_ODO_KM: 79295
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE210016A50137DC00
+    7CE210008A20135BF00
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 12.89062
     KONA_FLI_VOL: 22
     KONA_ODO_KM: 79836
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE21001BB101359000
+    7CE210016A50137DC00
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 13.82812
     KONA_FLI_VOL: 27
     KONA_ODO_KM: 79248
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE21001DAF0137B800
+    7CE21001BB101359000
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 13.67188
     KONA_FLI_VOL: 29
     KONA_ODO_KM: 79800
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE21001FB201359300
+    7CE21001DAF0137B800
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 13.90625
     KONA_FLI_VOL: 31
     KONA_ODO_KM: 79251
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE210029B00136BB00
+    7CE21001FB201359300
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 13.75
     KONA_FLI_VOL: 41
     KONA_ODO_KM: 79547
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE2100309701349C00
+    7CE210029B00136BB00
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 11.79688
     KONA_FLI_VOL: 48
     KONA_ODO_KM: 79004
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE210039A101342F00
+    7CE2100309701349C00
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 12.57812
     KONA_FLI_VOL: 57
     KONA_ODO_KM: 78895
     KONA_ODO_MI: 0
-- response: |-
+  response: |-
     7CE100F62B002E00000
-    7CE2100FF9301378A00
+    7CE210039A101342F00
     7CE220000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUSTER_VOLTAGE: 11.48438
     KONA_FLI_VOL: 255
     KONA_ODO_KM: 79754
     KONA_ODO_MI: 0
+  response: |-
+    7CE100F62B002E00000
+    7CE2100FF9301378A00
+    7CE220000AAAAAAAAAA

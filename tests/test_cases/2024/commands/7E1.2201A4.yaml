@@ -1,6 +1,11 @@
 command_id: 7E1.2201A4
 test_cases:
-- response: |-
+- expected_values:
+    KONA_CLUTCH_1_T: 64
+    KONA_CLUTCH_2_T: 64
+    KONA_GEAR_CUR: 0
+    KONA_GEAR_NXT: 0
+  response: |-
     7E910396201A4FFFFE0
     7E92160000000200000
     7E92200000000000000
@@ -10,12 +15,12 @@ test_cases:
     7E92600000000000000
     7E92700000000000000
     7E9280000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUTCH_1_T: 64
     KONA_CLUTCH_2_T: 64
     KONA_GEAR_CUR: 0
     KONA_GEAR_NXT: 0
-- response: |-
+  response: |-
     7E910396201A4FFFFE0
     7E92160000000340000
     7E92200000000000000
@@ -25,12 +30,12 @@ test_cases:
     7E92600000000000000
     7E92700000000000000
     7E9280000AAAAAAAAAA
-  expected_values:
-    KONA_CLUTCH_1_T: 64
-    KONA_CLUTCH_2_T: 64
+- expected_values:
+    KONA_CLUTCH_1_T: 66
+    KONA_CLUTCH_2_T: 66
     KONA_GEAR_CUR: 0
     KONA_GEAR_NXT: 0
-- response: |-
+  response: |-
     7E910396201A4FFFFE0
     7E92160000000340000
     7E92200000000000000
@@ -40,12 +45,12 @@ test_cases:
     7E92600000000000000
     7E92700000000000000
     7E9280000AAAAAAAAAA
-  expected_values:
+- expected_values:
     KONA_CLUTCH_1_T: 66
-    KONA_CLUTCH_2_T: 66
+    KONA_CLUTCH_2_T: 64
     KONA_GEAR_CUR: 0
     KONA_GEAR_NXT: 0
-- response: |-
+  response: |-
     7E910396201A4FFFFE0
     7E92160000000340000
     7E92200000000000000
@@ -55,8 +60,3 @@ test_cases:
     7E92600000000000000
     7E92700000000000000
     7E9280000AAAAAAAAAA
-  expected_values:
-    KONA_CLUTCH_1_T: 66
-    KONA_CLUTCH_2_T: 64
-    KONA_GEAR_CUR: 0
-    KONA_GEAR_NXT: 0
