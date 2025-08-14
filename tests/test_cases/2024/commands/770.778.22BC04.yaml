@@ -6,7 +6,7 @@ test_cases:
     KONA_REVERSE_GEAR: 0
   response: |-
     778100B62BC04BFFEBF
-    7782178000B0208AAAA
+    778217800060208AAAA
 - expected_values:
     KONA_LOCK_FL: 0
     KONA_LOCK_FR: 0
@@ -24,21 +24,14 @@ test_cases:
 - expected_values:
     KONA_LOCK_FL: 0
     KONA_LOCK_FR: 0
+    KONA_REVERSE_GEAR: 1
+  response: |-
+    778100B62BC04BFFEBF
+    77821780C0E0208AAAA
+- expected_values:
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
     KONA_REVERSE_GEAR: 0
   response: |-
     778100B62BC04BFFEBF
     7782178800B0208AAAA
-- expected_values:
-    KONA_LOCK_FL: 0
-    KONA_LOCK_FR: 0
-    KONA_REVERSE_GEAR: 0
-  response: |-
-    778100B62BC04BFFEBF
-    7782178800E0608AAAA
-- expected_values:
-    KONA_LOCK_FL: 0
-    KONA_LOCK_FR: 0
-    KONA_REVERSE_GEAR: 0
-  response: |-
-    778100B62BC04BFFEBF
-    7782178800F0208AAAA
