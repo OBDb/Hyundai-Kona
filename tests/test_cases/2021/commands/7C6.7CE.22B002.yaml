@@ -1,0 +1,11 @@
+command_id: 7C6.7CE.22B002
+test_cases:
+- expected_values:
+    KONA_CLUSTER_VOLTAGE: 12.57812
+    KONA_FLI_VOL: 39
+    KONA_ODO_KM: 0
+    KONA_ODO_MI: 44560
+  response: |-
+    7CE100F62B002D00000
+    7CE210027A100000000
+    7CE22AE10003808DCFE

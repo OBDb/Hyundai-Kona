@@ -1,0 +1,17 @@
+command_id: 7A0.7A8.22C00B
+test_cases:
+- expected_values:
+    KONA_TP_FL: 32.6
+    KONA_TP_FR: 13.6
+    KONA_TP_RR: 0.2
+    KONA_TT_FL: 66
+    KONA_TT_FR: 1
+    KONA_TT_RR: 0
+    KONA_TW_FL: 0
+    KONA_TW_FR: 1
+    KONA_TW_RR: 1
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100A3420100A444
+    7A8220100AC410100A6
+    7A823420100AAAAAAAA
