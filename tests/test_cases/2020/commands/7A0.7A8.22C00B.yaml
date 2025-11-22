@@ -2,6 +2,19 @@ command_id: 7A0.7A8.22C00B
 test_cases:
 - expected_values:
     KONA_TP_RL: 0.4
+    KONA_TT_FL: 0
+    KONA_TT_FR: 0
+    KONA_TT_RR: 2
+    KONA_TW_FL: 1
+    KONA_TW_FR: 0
+    KONA_TW_RR: 0
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100000000020000
+    7A82200020000000200
+    7A823000002AAAAAAAA
+- expected_values:
+    KONA_TP_RL: 0.4
     KONA_TP_RR: 0.2
     KONA_TT_FL: 0
     KONA_TT_FR: 0
@@ -45,21 +58,6 @@ test_cases:
     7A8220100BC420100BC
     7A823420100AAAAAAAA
 - expected_values:
-    KONA_TP_FL: 35.6
-    KONA_TP_FR: 13.4
-    KONA_TP_RR: 0.2
-    KONA_TT_FL: 68
-    KONA_TT_FR: 1
-    KONA_TT_RR: 0
-    KONA_TW_FL: 0
-    KONA_TW_FR: 1
-    KONA_TW_RR: 1
-  response: |-
-    7A8101762C00BFFFF00
-    7A82100B2440100C143
-    7A8220100BC410100BC
-    7A823410100AAAAAAAA
-- expected_values:
     KONA_TP_FL: 36.4
     KONA_TP_FR: 14.4
     KONA_TP_RR: 0.2
@@ -74,3 +72,18 @@ test_cases:
     7A82100B6480100C748
     7A8220100C1450100C2
     7A823440100AAAAAAAA
+- expected_values:
+    KONA_TP_FL: 37.2
+    KONA_TP_FR: 12.4
+    KONA_TP_RR: 0.2
+    KONA_TT_FL: 63
+    KONA_TT_FR: 1
+    KONA_TT_RR: 0
+    KONA_TW_FL: 0
+    KONA_TW_FR: 1
+    KONA_TW_RR: 1
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100BA3F0100BC3E
+    7A8220100B63C0100B7
+    7A8233C0100AAAAAAAA
