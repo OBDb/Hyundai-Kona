@@ -73,6 +73,21 @@ test_cases:
     7A8220100C1450100C2
     7A823440100AAAAAAAA
 - expected_values:
+    KONA_TP_FL: 36.6
+    KONA_TP_FR: 12.8
+    KONA_TP_RR: 0.4
+    KONA_TT_FL: 65
+    KONA_TT_FR: 1
+    KONA_TT_RR: 0
+    KONA_TW_FL: 0
+    KONA_TW_FR: 1
+    KONA_TW_RR: 1
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100B7410100BA40
+    7A8220100B43D0200B4
+    7A8233D0100AAAAAAAA
+- expected_values:
     KONA_TP_FL: 37.2
     KONA_TP_FR: 12.4
     KONA_TP_RR: 0.2
