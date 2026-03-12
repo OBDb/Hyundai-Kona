@@ -32,6 +32,7 @@ supported_commands_by_ecu:
   - 011C:OBDSUP
   - 011F:RUNTM
   - 0121:MIL_DIST
+  - 0123:FRP
   - 012C:EGR_PCT
   - 012D:EGR_ERR
   - 012E:EVAP_PCT
@@ -46,6 +47,7 @@ supported_commands_by_ecu:
   - 0142:VPWR
   - 0143:LOAD_ABS
   - 0144:EQ_RAT
+  - 0145:TP_R
   - 7E0.010D:VSS
   - 7E0.012F:FLI
   - 7E0.0131:CLR_DIST
