@@ -17,11 +17,11 @@ test_cases:
     7A8243BFFFFFFFFFFFF
     7A825FFFFAAAAAAAAAA
 - expected_values:
-    KONA_TP_RL: 29.4
+    KONA_TP_RR: 29.4
     KONA_TT_FL: 0
     KONA_TT_FR: 0
-    KONA_TT_RL: 37
-    KONA_TT_RR: 0
+    KONA_TT_RL: 0
+    KONA_TT_RR: 37
     KONA_TW_FL: 0
     KONA_TW_FR: 0
     KONA_TW_RL: 0
@@ -36,12 +36,12 @@ test_cases:
 - expected_values:
     KONA_TP_FL: 29.6
     KONA_TP_FR: 31.6
-    KONA_TP_RL: 31
-    KONA_TP_RR: 29.6
+    KONA_TP_RL: 29.6
+    KONA_TP_RR: 31
     KONA_TT_FL: 39
     KONA_TT_FR: 48
-    KONA_TT_RL: 45
-    KONA_TT_RR: 36
+    KONA_TT_RL: 36
+    KONA_TT_RR: 45
     KONA_TW_FL: 0
     KONA_TW_FR: 0
     KONA_TW_RL: 0
@@ -55,8 +55,8 @@ test_cases:
     7A82582A2AAAAAAAAAA
 - expected_values:
     KONA_TP_FL: 30
-    KONA_TP_RL: 29.4
-    KONA_TP_RR: 30
+    KONA_TP_RL: 30
+    KONA_TP_RR: 29.4
     KONA_TT_FL: 40
     KONA_TT_FR: 0
     KONA_TT_RL: 37
@@ -75,8 +75,8 @@ test_cases:
 - expected_values:
     KONA_TP_FL: 30.6
     KONA_TP_FR: 32.2
-    KONA_TP_RL: 30.6
-    KONA_TP_RR: 30.8
+    KONA_TP_RL: 30.8
+    KONA_TP_RR: 30.6
     KONA_TT_FL: 47
     KONA_TT_FR: 53
     KONA_TT_RL: 46
@@ -115,12 +115,12 @@ test_cases:
 - expected_values:
     KONA_TP_FL: 31.2
     KONA_TP_FR: 31.2
-    KONA_TP_RL: 30.8
-    KONA_TP_RR: 33.2
+    KONA_TP_RL: 33.2
+    KONA_TP_RR: 30.8
     KONA_TT_FL: 46
     KONA_TT_FR: 46
-    KONA_TT_RL: 42
-    KONA_TT_RR: 59
+    KONA_TT_RL: 59
+    KONA_TT_RR: 42
     KONA_TW_FL: 0
     KONA_TW_FR: 0
     KONA_TW_RL: 0
@@ -135,8 +135,8 @@ test_cases:
 - expected_values:
     KONA_TP_FL: 31.4
     KONA_TP_FR: 31.4
-    KONA_TP_RL: 30.8
-    KONA_TP_RR: 31.2
+    KONA_TP_RL: 31.2
+    KONA_TP_RR: 30.8
     KONA_TT_FL: 45
     KONA_TT_FR: 46
     KONA_TT_RL: 42
@@ -155,8 +155,8 @@ test_cases:
 - expected_values:
     KONA_TP_FL: 32
     KONA_TP_FR: 32.2
-    KONA_TP_RL: 31.8
-    KONA_TP_RR: 32
+    KONA_TP_RL: 32
+    KONA_TP_RR: 31.8
     KONA_TT_FL: 52
     KONA_TT_FR: 53
     KONA_TT_RL: 51
