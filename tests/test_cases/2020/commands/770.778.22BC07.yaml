@@ -1,0 +1,12 @@
+command_id: 770.778.22BC07
+test_cases:
+- expected_values:
+    KONA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC07004193
+    778210000000100AAAA
+- expected_values:
+    KONA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC07004193
+    778210000000900AAAA

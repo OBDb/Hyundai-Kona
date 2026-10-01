@@ -2,20 +2,96 @@
     { "hdr": "7E0", "type": "engine" }
   ],
   "commands": [
-{ "hdr": "7A0", "rax": "7A8", "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2018, "from": 2027 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021], "from": 2026 },
   "signals": [
-    {"id": "KONA_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5, "nullmin": 0, "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "KONA_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 100, "min": -50,                         "unit": "celsius" }, "name": "Tire temperature front left"},
-    {"id": "KONA_TW_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert front left"},
-    {"id": "KONA_TP_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5, "nullmin": 0, "unit": "psi"     }, "name": "Tire pressure front right",    "suggestedMetric": "frontRightTirePressure"},
-    {"id": "KONA_TT_FR", "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 100, "min": -50,                         "unit": "celsius" }, "name": "Tire temperature front right"},
-    {"id": "KONA_TW_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert front right"},
-    {"id": "KONA_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5, "nullmin": 0, "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "KONA_TT_RL", "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 100, "min": -50,                         "unit": "celsius" }, "name": "Tire temperature rear left"},
-    {"id": "KONA_TW_RL", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert rear left"},
-    {"id": "KONA_TP_RR", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5, "nullmin": 0, "unit": "psi"     }, "name": "Tire pressure rear right",     "suggestedMetric": "rearRightTirePressure"},
-    {"id": "KONA_TT_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 100, "min": -50,                         "unit": "celsius" }, "name": "Tire temperature rear right"},
-    {"id": "KONA_TW_RR", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                       "unit": "noyes"   }, "name": "Tire alert rear right"}
+    {"id": "KONA_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "KONA_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "KONA_DOOR_FR",   "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "KONA_HANDBRAKE", "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "KONA_DOOR_RR",   "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "KONA_DOOR_RL",   "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open?"},
+    {"id": "KONA_BELT_PASS", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1, "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
+    {"id": "KONA_BELT_DRIV", "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1, "unit": "noyes" }, "name": "Driver seatbelt latched?"},
+    {"id": "KONA_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
+    {"id": "KONA_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021], "from": 2026 },
+  "signals": [
+    {"id": "KONA_GEAR_R",  "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "KONA_LOCK_FL", "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "KONA_LOCK_FR", "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "KONA_BELT_RM", "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "KONA_BELT_RL", "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "KONA_BELT_RR", "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021], "from": 2026 },
+  "signals": [
+    {"id": "KONA_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
+    {"id": "KONA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021], "from": 2024 },
+  "signals": [
+    {"id": "KONA_DEFOG_LIGHT", "path": "Lights", "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "offon" }, "name": "Defog light"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2019, "years": [2021, 2022], "from": 2025 },
+  "signals": [
+    {"id": "KONA_TURN_R", "path": "Lights", "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "offon" }, "name": "Right turn signal on?"},
+    {"id": "KONA_TURN_L", "path": "Lights", "fmt": {"bix": 38, "len": 1, "max": 1, "unit": "offon" }, "name": "Left turn signal on?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2025 },
+  "signals": [
+    {"id": "KONA_HL_HIGH", "path": "Lights", "fmt": {"bix": 55, "len": 1, "max": 1, "unit": "offon" }, "name": "Headlight high beam"},
+    {"id": "KONA_HL_LOW",  "path": "Lights", "fmt": {"bix": 63, "len": 1, "max": 1, "unit": "offon" }, "name": "Headlight low beam"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "cmd": {"22": "C00B"}, "freq": 15, "filter": { "to": 2023 }, "dbgfilter": { "to": 2018 },
+  "signals": [
+    {"id": "KONA_TP_FL_PRE24", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "KONA_TT_FL_PRE24", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature front left",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "KONA_TP_FR_PRE24", "path": "Tires", "fmt": {"bix": 64,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure front right",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "KONA_TT_FR_PRE24", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature front right", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "KONA_TP_RL_PRE24", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "KONA_TT_RL_PRE24", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature rear left",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "KONA_TP_RR_PRE24", "path": "Tires", "fmt": {"bix": 128, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure rear right",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "KONA_TT_RR_PRE24", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature rear right",  "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "cmd": {"22": "C00B"}, "freq": 15, "filter": { "from": 2024 }, "dbgfilter": { "from": 2027 },
+  "signals": [
+    {"id": "KONA_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure front left",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "KONA_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature front left",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "KONA_TW_FL", "path": "Tires", "fmt": {"bix": 56,  "len": 8, "max": 1,                                                                     "unit": "noyes"   }, "name": "Tire alert front left"},
+    {"id": "KONA_TP_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure front right",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "KONA_TT_FR", "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature front right", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "KONA_TW_FR", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 1,                                                                     "unit": "noyes"   }, "name": "Tire alert front right"},
+    {"id": "KONA_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure rear left",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "KONA_TT_RL", "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature rear left",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "KONA_TW_RL", "path": "Tires", "fmt": {"bix": 136, "len": 8, "max": 1,                                                                     "unit": "noyes"   }, "name": "Tire alert rear left"},
+    {"id": "KONA_TP_RR", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "nullmax": 51,  "unit": "psi"     }, "name": "Tire pressure rear right",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "KONA_TT_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature rear right",  "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "KONA_TW_RR", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                                                     "unit": "noyes"   }, "name": "Tire alert rear right"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00C"}, "freq": 30,
+  "signals": [
+    {"id": "KONA_SENS_1_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 1"},
+    {"id": "KONA_SENS_1_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 2"},
+    {"id": "KONA_SENS_1_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00D"}, "freq": 30,
+  "signals": [
+    {"id": "KONA_SENS_2_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 1"},
+    {"id": "KONA_SENS_2_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 2"},
+    {"id": "KONA_SENS_2_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00E"}, "freq": 30,
+  "signals": [
+    {"id": "KONA_SENS_3_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 1"},
+    {"id": "KONA_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 2"},
+    {"id": "KONA_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00F"}, "freq": 30,
+  "signals": [
+    {"id": "KONA_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 1"},
+    {"id": "KONA_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 2"},
+    {"id": "KONA_SENS_4_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 3"}
   ]},
 { "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
@@ -25,10 +101,10 @@
   ]},
 { "hdr": "7C6", "rax": "7CE", "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
-    {"id": "KONA_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"},
-    {"id": "KONA_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8,                   "unit": "volts"      }, "name": "Cluster Voltage"},
-    {"id": "KONA_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
-    {"id": "KONA_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+    {"id": "KONA_FLI_VOL",         "path": "Fuel",       "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"},
+    {"id": "KONA_CLUSTER_VOLTAGE", "path": "Electrical", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8,                                 "unit": "volts"      }, "name": "Cluster Voltage"},
+    {"id": "KONA_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,              "nullmin": 0,                   "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
+    {"id": "KONA_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,              "nullmin": 0,                   "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "rax": "7D9", "cmd": {"22": "4000"}, "freq": 0.1, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
@@ -37,17 +113,243 @@
     {"id": "KONA_TIRE_RL_VSS", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "KONA_TIRE_RR_VSS", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "KONA_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "KONA_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "KONA_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "KONA_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2021], "from": 2026 },
+  "signals": [
+    {"id": "KONA_WHEEL_ANGLE_ABS",    "path": "Tires",  "fmt": {"bix": 56, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Wheel turn angle, absolute"},
+    {"id": "KONA_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,               "sign": true, "unit": "amps"    }, "name": "Motor-driven power steering current"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
+    {"id": "KONA_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
+    {"id": "KONA_GDI_IT_A3", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 3"},
+    {"id": "KONA_GDI_IT_A4", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 4"},
+    {"id": "KONA_GDI_IT_B1", "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 1"},
+    {"id": "KONA_GDI_IT_B2", "path": "Engine", "fmt": {"bix": 368, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 2"},
+    {"id": "KONA_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
+    {"id": "KONA_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
-    {"id": "KONA_INTAKE_TEMP", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake Air Temperature"},
-    {"id": "KONA_OIL_TEMP",    "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781, "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine Oil Temperature"}
+    {"id": "KONA_BATTERY_V",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                "nullmin": 0, "unit": "volts"   }, "name": "Battery voltage"},
+    {"id": "KONA_BATTERY_V_AFTER_IGNITION", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                "nullmin": 0, "unit": "volts"   }, "name": "Battery voltage after ignition"},
+    {"id": "KONA_INTAKE_TEMP",              "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,               "unit": "celsius" }, "name": "Intake Air Temperature"},
+    {"id": "KONA_OIL_TEMP",                 "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,               "unit": "celsius" }, "name": "Engine Oil Temperature",         "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
-    {"id": "KONA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 1"},
-    {"id": "KONA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 2"},
-    {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 3"},
-    {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "seconds" }, "name": "Injection Duration Cyl 4"}
+    {"id": "KONA_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 1"},
+    {"id": "KONA_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 2"},
+    {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 3"},
+    {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
+    {"id": "KONA_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020, 2021], "from": 2026 },
+  "signals": [
+    {"id": "KONA_FUEL_CUT_7E0",       "path": "Fuel",   "fmt": {"bix": 64,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
+    {"id": "KONA_WIDE_OPEN_THROTTLE", "path": "Engine", "fmt": {"bix": 72,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Wide open throttle"},
+    {"id": "KONA_KNOCK_DETECTED_7E0", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00D"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "KONA_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "KONA_MISFIRES_C3_CUR",                                "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "KONA_MISFIRES_C4_CUR",                                "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
+    {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E010"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E011"}, "freq": 5,
+  "signals": [
+    {"id": "KONA_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_CLT_FAN_PWM",         "path": "Engine", "fmt": {"bix": 88,  "len": 16, "max": 99.67,   "mul": 15.21, "div": 10000, "unit": "percent"    }, "name": "Coolant fan PWM"},
+    {"id": "KONA_AC_P",                "path": "Engine", "fmt": {"bix": 112, "len": 8,  "max": 3516.45, "mul": 13.79,               "unit": "kilopascal" }, "name": "Air conditioning pressure"},
+    {"id": "KONA_OVERHEAT_PROTECTION", "path": "Engine", "fmt": {"bix": 132, "len": 1,  "max": 1,                                   "unit": "offon"      }, "name": "Overheat protection, active"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E01D"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_MIS_1_7E0",         "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
+    {"id": "KONA_MIS_2_7E0",         "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
+    {"id": "KONA_MIS_3_7E0",         "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"},
+    {"id": "KONA_MIS_4_7E0",         "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 4"},
+    {"id": "KONA_MIS_HARMFUL_CAT_1", "path": "Engine", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 1"},
+    {"id": "KONA_MIS_HARMFUL_CAT_2", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 2"},
+    {"id": "KONA_MIS_HARMFUL_CAT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 3"},
+    {"id": "KONA_MIS_HARMFUL_CAT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E020"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
+    {"id": "KONA_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "KONA_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543, "mul": 0.008291,               "nullmin": 0, "unit": "kilopascal" }, "name": "Turbo boost pressure, absolute"},
+    {"id": "KONA_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,  "mul": 10,       "div": 65535,               "unit": "volts"      }, "name": "Waste gate voltage"},
+    {"id": "KONA_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200, "mul": 200,      "div": 65535,               "unit": "percent"    }, "name": "Waste gate duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E023"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_FUEL_P_ACT",           "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, actual"},
+    {"id": "KONA_FUEL_P_SET_POINT_7E0", "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, set point"},
+    {"id": "KONA_FUEL_P_SET_POINT_DEV", "path": "Fuel",   "fmt": {"bix": 80,  "len": 16, "blsb": true,   "max": 173881.3622, "min": -173886.6688, "mul": 53066, "div": 10000, "sign": true,                   "unit": "unknown"      },                                "name": "Fuel pressure set point deviation"},
+    {"id": "KONA_INJ_IMPULSE_1_CYL_1",  "path": "Engine", "fmt": {"bix": 200, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 1"},
+    {"id": "KONA_INJ_IMPULSE_1_CYL_2",  "path": "Engine", "fmt": {"bix": 216, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 2"},
+    {"id": "KONA_INJ_IMPULSE_1_CYL_3",  "path": "Engine", "fmt": {"bix": 232, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 3"},
+    {"id": "KONA_INJ_IMPULSE_1_CYL_4",  "path": "Engine", "fmt": {"bix": 248, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 1, cylinder 4"},
+    {"id": "KONA_INJ_IMPULSE_2_CYL_1",  "path": "Engine", "fmt": {"bix": 264, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 1"},
+    {"id": "KONA_INJ_IMPULSE_2_CYL_2",  "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 2"},
+    {"id": "KONA_INJ_IMPULSE_2_CYL_3",  "path": "Engine", "fmt": {"bix": 296, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 3"},
+    {"id": "KONA_INJ_IMPULSE_2_CYL_4",  "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true,   "max": 262.14,                                         "div": 250,                                   "unit": "milliseconds" },                                "name": "Injection impulse 2, cylinder 4"},
+    {"id": "KONA_INJ_IMPULSE_3_CYL_1",  "path": "Engine", "fmt": {"bix": 328, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 1"},
+    {"id": "KONA_INJ_IMPULSE_3_CYL_2",  "path": "Engine", "fmt": {"bix": 344, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 2"},
+    {"id": "KONA_INJ_IMPULSE_3_CYL_3",  "path": "Engine", "fmt": {"bix": 360, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 3"},
+    {"id": "KONA_INJ_IMPULSE_3_CYL_4",  "path": "Engine", "fmt": {"bix": 376, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 4"},
+    {"id": "KONA_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A0"}, "freq": 1,
+  "signals": [
+    {"id": "KONA_RPM",                                 "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "KONA_VSS_7E1",                             "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "KONA_RELATIVE_ACCELERATOR_PEDAL_POSITION", "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "KONA_TURBINE_SPD",                         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "KONA_OUTPUT_RPM",                          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "KONA_ATF_T",                               "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "KONA_TORQUE_CONVERTER_SLIP",               "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "KONA_GEAR",                                "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear"},
+    {"id": "KONA_CURRENT_GEAR",                        "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "KONA_COMMANDED_GEAR",                      "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "KONA_BRAKE_PEDAL",                         "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "KONA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KONA_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                        "div": 2,                                  "unit": "percent"       }, "name": "HV battery charge, dashboard",     "suggestedMetric": "stateOfCharge"},
+    {"id": "KONA_HVBAT_CURR",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 3276.7,     "min": -3276.8, "div": 10, "sign": true,                   "unit": "amps"          }, "name": "HV battery current"},
+    {"id": "KONA_HVBAT_VDC",        "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                     "div": 10,                                 "unit": "volts"         }, "name": "HV battery DC voltage"},
+    {"id": "KONA_HVBAT_T_MAX",      "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 127,        "min": -127,               "sign": true,                   "unit": "celsius"       }, "name": "HV battery temperature, maximum"},
+    {"id": "KONA_HVBAT_T_MIN",      "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 127,        "min": -127,               "sign": true,                   "unit": "celsius"       }, "name": "HV battery temperature, minimum"},
+    {"id": "KONA_HVBAT_MOD1_T",     "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 127,        "min": -127,               "sign": true,                   "unit": "celsius"       }, "name": "HV battery temperature, module 1"},
+    {"id": "KONA_HVBAT_MOD2_T",     "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 127,        "min": -127,               "sign": true,                   "unit": "celsius"       }, "name": "HV battery temperature, module 2"},
+    {"id": "KONA_C_V_MAX",          "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 5.1,                        "div": 50,                                 "unit": "volts"         }, "name": "Maximum cell voltage"},
+    {"id": "KONA_C_V_MAX_ID",       "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 255,                                                                   "unit": "scalar"        }, "name": "Maximum cell voltage id",          "description": "The id of the cell with the highest voltage."},
+    {"id": "KONA_C_V_MIN",          "path": "Battery", "fmt": {"bix": 200, "len": 8,  "max": 5.1,                        "div": 50,                                 "unit": "volts"         }, "name": "Minimum cell voltage"},
+    {"id": "KONA_C_V_MIN_ID",       "path": "Battery", "fmt": {"bix": 208, "len": 8,  "max": 255,                                                                   "unit": "scalar"        }, "name": "Minimum cell voltage id",          "description": "The id of the cell with the lowest voltage."},
+    {"id": "KONA_HVBAT_FAN_STATUS", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                                                   "unit": "scalar"        }, "name": "HV battery fan status"},
+    {"id": "KONA_HVBAT_FAN",        "path": "Battery", "fmt": {"bix": 224, "len": 8,  "max": 255,                                                                   "unit": "hertz"         }, "name": "HV battery fan"},
+    {"id": "KONA_VPWR_V2",          "path": "Battery", "fmt": {"bix": 232, "len": 8,  "max": 25.5,                       "div": 10,                                 "unit": "volts"         }, "name": "Battery auxiliary voltage",        "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "KONA_HVBAT_CHRG_TOT_C", "path": "Battery", "fmt": {"bix": 240, "len": 32, "max": 429496729,                  "div": 10,                                 "unit": "ampereHours"   }, "name": "Total charge current"},
+    {"id": "KONA_HVBAT_DSCH_TOT_C", "path": "Battery", "fmt": {"bix": 272, "len": 32, "max": 429496729,                  "div": 10,                                 "unit": "ampereHours"   }, "name": "Total discharge current"},
+    {"id": "KONA_HVBAT_CHRG_TOT_E", "path": "Battery", "fmt": {"bix": 304, "len": 32, "max": 429496729,                  "div": 10,                                 "unit": "kilowattHours" }, "name": "Total charge energy"},
+    {"id": "KONA_HVBAT_DSCH_TOT_E", "path": "Battery", "fmt": {"bix": 336, "len": 32, "max": 429496729,                  "div": 10,                                 "unit": "kilowattHours" }, "name": "Total discharge energy"},
+    {"id": "KONA_DRIVE_TIME",       "path": "Stats",   "fmt": {"bix": 368, "len": 32, "max": 4294967295,                                                            "unit": "seconds"       }, "name": "Total drive time"},
+    {"id": "KONA_INVRT_CV",         "path": "Battery", "fmt": {"bix": 408, "len": 16, "max": 65535,                                               "nullmax": 65535, "unit": "volts"         }, "name": "Inverter capacitor voltage"},
+    {"id": "KONA_RPM_7E4",          "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 32767,      "min": -32768,             "sign": true,                   "unit": "rpm"           }, "name": "Drive motor speed"},
+    {"id": "KONA_ISO_R",            "path": "Battery", "fmt": {"bix": 456, "len": 16, "max": 65535,                                                                 "unit": "kiloohms"      }, "name": "Isolation resistance"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KONA_CELL_V_001", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 001"},
+    {"id": "KONA_CELL_V_002", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 002"},
+    {"id": "KONA_CELL_V_003", "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 003"},
+    {"id": "KONA_CELL_V_004", "path": "Battery.Cells", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 004"},
+    {"id": "KONA_CELL_V_005", "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 005"},
+    {"id": "KONA_CELL_V_006", "path": "Battery.Cells", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 006"},
+    {"id": "KONA_CELL_V_007", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 007"},
+    {"id": "KONA_CELL_V_008", "path": "Battery.Cells", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 008"},
+    {"id": "KONA_CELL_V_009", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 009"},
+    {"id": "KONA_CELL_V_010", "path": "Battery.Cells", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 010"},
+    {"id": "KONA_CELL_V_011", "path": "Battery.Cells", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 011"},
+    {"id": "KONA_CELL_V_012", "path": "Battery.Cells", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 012"},
+    {"id": "KONA_CELL_V_013", "path": "Battery.Cells", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 013"},
+    {"id": "KONA_CELL_V_014", "path": "Battery.Cells", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 014"},
+    {"id": "KONA_CELL_V_015", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 015"},
+    {"id": "KONA_CELL_V_016", "path": "Battery.Cells", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 016"},
+    {"id": "KONA_CELL_V_017", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 017"},
+    {"id": "KONA_CELL_V_018", "path": "Battery.Cells", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 018"},
+    {"id": "KONA_CELL_V_019", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 019"},
+    {"id": "KONA_CELL_V_020", "path": "Battery.Cells", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 020"},
+    {"id": "KONA_CELL_V_021", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 021"},
+    {"id": "KONA_CELL_V_022", "path": "Battery.Cells", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 022"},
+    {"id": "KONA_CELL_V_023", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 023"},
+    {"id": "KONA_CELL_V_024", "path": "Battery.Cells", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 024"},
+    {"id": "KONA_CELL_V_025", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 025"},
+    {"id": "KONA_CELL_V_026", "path": "Battery.Cells", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 026"},
+    {"id": "KONA_CELL_V_027", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 027"},
+    {"id": "KONA_CELL_V_028", "path": "Battery.Cells", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 028"},
+    {"id": "KONA_CELL_V_029", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 029"},
+    {"id": "KONA_CELL_V_030", "path": "Battery.Cells", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 030"},
+    {"id": "KONA_CELL_V_031", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 031"},
+    {"id": "KONA_CELL_V_032", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 032"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KONA_CELL_V_033", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 033"},
+    {"id": "KONA_CELL_V_034", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 034"},
+    {"id": "KONA_CELL_V_035", "path": "Battery.Cells", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 035"},
+    {"id": "KONA_CELL_V_036", "path": "Battery.Cells", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 036"},
+    {"id": "KONA_CELL_V_037", "path": "Battery.Cells", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 037"},
+    {"id": "KONA_CELL_V_038", "path": "Battery.Cells", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 038"},
+    {"id": "KONA_CELL_V_039", "path": "Battery.Cells", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 039"},
+    {"id": "KONA_CELL_V_040", "path": "Battery.Cells", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 040"},
+    {"id": "KONA_CELL_V_041", "path": "Battery.Cells", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 041"},
+    {"id": "KONA_CELL_V_042", "path": "Battery.Cells", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 042"},
+    {"id": "KONA_CELL_V_043", "path": "Battery.Cells", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 043"},
+    {"id": "KONA_CELL_V_044", "path": "Battery.Cells", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 044"},
+    {"id": "KONA_CELL_V_045", "path": "Battery.Cells", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 045"},
+    {"id": "KONA_CELL_V_046", "path": "Battery.Cells", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 046"},
+    {"id": "KONA_CELL_V_047", "path": "Battery.Cells", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 047"},
+    {"id": "KONA_CELL_V_048", "path": "Battery.Cells", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 048"},
+    {"id": "KONA_CELL_V_049", "path": "Battery.Cells", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 049"},
+    {"id": "KONA_CELL_V_050", "path": "Battery.Cells", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 050"},
+    {"id": "KONA_CELL_V_051", "path": "Battery.Cells", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 051"},
+    {"id": "KONA_CELL_V_052", "path": "Battery.Cells", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 052"},
+    {"id": "KONA_CELL_V_053", "path": "Battery.Cells", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 053"},
+    {"id": "KONA_CELL_V_054", "path": "Battery.Cells", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 054"},
+    {"id": "KONA_CELL_V_055", "path": "Battery.Cells", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 055"},
+    {"id": "KONA_CELL_V_056", "path": "Battery.Cells", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 056"},
+    {"id": "KONA_CELL_V_057", "path": "Battery.Cells", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 057"},
+    {"id": "KONA_CELL_V_058", "path": "Battery.Cells", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 058"},
+    {"id": "KONA_CELL_V_059", "path": "Battery.Cells", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 059"},
+    {"id": "KONA_CELL_V_060", "path": "Battery.Cells", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 060"},
+    {"id": "KONA_CELL_V_061", "path": "Battery.Cells", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 061"},
+    {"id": "KONA_CELL_V_062", "path": "Battery.Cells", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 062"},
+    {"id": "KONA_CELL_V_063", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 063"},
+    {"id": "KONA_CELL_V_064", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 064"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "KONA_HVBAT_SOH",      "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100, "div": 10, "nullmin": 0, "unit": "percent" }, "name": "HV battery state of health", "suggestedMetric": "stateOfHealth"},
+    {"id": "KONA_HVBAT_SOC_DISP", "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100, "div": 2,                "unit": "percent" }, "name": "HV battery charge",          "suggestedMetric": "stateOfCharge"}
   ]}
 ]
 }
