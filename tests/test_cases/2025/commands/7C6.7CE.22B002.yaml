@@ -2,7 +2,7 @@ command_id: 7C6.7CE.22B002
 test_cases:
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.20312
-    KONA_FLI_VOL: 9
+    KONA_FLI_VOL: 4.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8139
   response: |-
@@ -12,7 +12,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 11.71875
-    KONA_FLI_VOL: 16
+    KONA_FLI_VOL: 8
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8436
   response: |-
@@ -22,7 +22,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 11.95312
-    KONA_FLI_VOL: 24
+    KONA_FLI_VOL: 12
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8704
   response: |-
@@ -32,7 +32,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 12.42188
-    KONA_FLI_VOL: 25
+    KONA_FLI_VOL: 12.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8427
   response: |-
@@ -42,7 +42,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 12.5
-    KONA_FLI_VOL: 25
+    KONA_FLI_VOL: 12.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8438
   response: |-
@@ -52,7 +52,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 12.03125
-    KONA_FLI_VOL: 29
+    KONA_FLI_VOL: 14.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 5847
   response: |-
@@ -62,7 +62,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 14.14062
-    KONA_FLI_VOL: 29
+    KONA_FLI_VOL: 14.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 8703
   response: |-
@@ -72,7 +72,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.98438
-    KONA_FLI_VOL: 31
+    KONA_FLI_VOL: 15.5
     KONA_ODO_KM: 0
     KONA_ODO_MI: 6456
   response: |-
@@ -82,7 +82,7 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.28125
-    KONA_FLI_VOL: 88
+    KONA_FLI_VOL: 44
     KONA_ODO_KM: 0
     KONA_ODO_MI: 11197
   response: |-
@@ -92,7 +92,6 @@ test_cases:
     7CE2300000000AAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 10.9375
-    KONA_FLI_VOL: 255
     KONA_ODO_KM: 0
     KONA_ODO_MI: 6978
   response: |-

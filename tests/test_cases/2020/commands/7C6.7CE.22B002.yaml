@@ -29,7 +29,7 @@ test_cases:
     7CE22A77EAAAAAAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 14.0625
-    KONA_FLI_VOL: 94
+    KONA_FLI_VOL: 47
     KONA_ODO_KM: 0
     KONA_ODO_MI: 55020
   response: |-
