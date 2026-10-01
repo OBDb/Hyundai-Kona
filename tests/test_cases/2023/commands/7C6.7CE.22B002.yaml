@@ -3,7 +3,6 @@ test_cases:
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.4375
     KONA_FLI_VOL: 41
-    KONA_ODO_KM: 0
     KONA_ODO_MI: 19833
   response: |-
     7CE100F62B002D00000
@@ -12,7 +11,6 @@ test_cases:
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.04688
     KONA_FLI_VOL: 47
-    KONA_ODO_KM: 0
     KONA_ODO_MI: 19817
   response: |-
     7CE100F62B002D00000
@@ -21,7 +19,6 @@ test_cases:
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.4375
     KONA_FLI_VOL: 47
-    KONA_ODO_KM: 0
     KONA_ODO_MI: 19803
   response: |-
     7CE100F62B002D00000
@@ -30,7 +27,6 @@ test_cases:
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 13.59375
     KONA_FLI_VOL: 47
-    KONA_ODO_KM: 0
     KONA_ODO_MI: 19804
   response: |-
     7CE100F62B002D00000
@@ -38,7 +34,6 @@ test_cases:
     7CE224D5CAAAAAAAAAA
 - expected_values:
     KONA_CLUSTER_VOLTAGE: 12.10938
-    KONA_ODO_KM: 0
     KONA_ODO_MI: 19833
   response: |-
     7CE100F62B002D00000

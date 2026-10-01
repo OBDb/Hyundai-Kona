@@ -1,6 +1,8 @@
 command_id: 7E0.7E8.22E001
 test_cases:
 - expected_values:
+    KONA_BATTERY_V: 12.80612
+    KONA_BATTERY_V_AFTER_IGNITION: 12.66988
     KONA_INTAKE_TEMP: 24.75182
     KONA_OIL_TEMP: 80.25321
   response: |-
@@ -11,6 +13,8 @@ test_cases:
     7E8240099D900514D03
     7E825C90161AB41FF7F
 - expected_values:
+    KONA_BATTERY_V: 12.46553
+    KONA_BATTERY_V_AFTER_IGNITION: 12.46553
     KONA_INTAKE_TEMP: 33.00203
     KONA_OIL_TEMP: 74.25306
   response: |-
