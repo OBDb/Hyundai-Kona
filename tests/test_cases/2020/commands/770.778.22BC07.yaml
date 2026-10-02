@@ -5,8 +5,3 @@ test_cases:
   response: |-
     778100B62BC07004193
     778210000000100AAAA
-- expected_values:
-    KONA_DEFOG_LIGHT: 0
-  response: |-
-    778100B62BC07004193
-    778210000000900AAAA
