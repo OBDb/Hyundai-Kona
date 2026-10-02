@@ -1,6 +1,20 @@
 command_id: 7A0.7A8.22C00B|f=-2023
 test_cases:
 - expected_values:
+    KONA_TP_FL_PRE24: null
+    KONA_TP_FR_PRE24: null
+    KONA_TP_RL_PRE24: null
+    KONA_TP_RR_PRE24: null
+    KONA_TT_FL_PRE24: null
+    KONA_TT_FR_PRE24: null
+    KONA_TT_RL_PRE24: null
+    KONA_TT_RR_PRE24: null
+  response: |-
+    7A8101762C00BFFFF00
+    7A82100000000020000
+    7A82200020000000200
+    7A823000002AAAAAAAA
+- expected_values:
     KONA_TP_RR_PRE24: 36.6
     KONA_TT_RR_PRE24: 15
   response: |-
