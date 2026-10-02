@@ -71,25 +71,25 @@
     {"id": "KONA_TT_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Tire temperature rear right",  "suggestedMetric": "rearRightTireTemperature"},
     {"id": "KONA_TW_RR", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 1,                                                                     "unit": "noyes"   }, "name": "Tire alert rear right"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00C"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00C"}, "freq": 30, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_SENS_1_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 1"},
     {"id": "KONA_SENS_1_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 2"},
     {"id": "KONA_SENS_1_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 1 odometer event 3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00D"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00D"}, "freq": 30, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_SENS_2_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 1"},
     {"id": "KONA_SENS_2_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 2"},
     {"id": "KONA_SENS_2_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 2 odometer event 3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00E"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00E"}, "freq": 30, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_SENS_3_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 1"},
     {"id": "KONA_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 2"},
     {"id": "KONA_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 3 odometer event 3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00F"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00F"}, "freq": 30, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 1"},
     {"id": "KONA_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "nullmax": 1677721.5, "unit": "kilometers" }, "name": "Sensor 4 odometer event 2"},
@@ -127,7 +127,7 @@
     {"id": "KONA_WHEEL_ANGLE_ABS",    "path": "Tires",  "fmt": {"bix": 56, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Wheel turn angle, absolute"},
     {"id": "KONA_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,               "sign": true, "unit": "amps"    }, "name": "Motor-driven power steering current"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
+{ "hdr": "7E0", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
     {"id": "KONA_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
@@ -152,7 +152,7 @@
     {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 3"},
     {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
     {"id": "KONA_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
@@ -180,21 +180,21 @@
     {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
     {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E010"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E011"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E011"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_CLT_FAN_PWM",         "path": "Engine", "fmt": {"bix": 88,  "len": 16, "max": 99.67,   "mul": 15.21, "div": 10000, "unit": "percent"    }, "name": "Coolant fan PWM"},
     {"id": "KONA_AC_P",                "path": "Engine", "fmt": {"bix": 112, "len": 8,  "max": 3516.45, "mul": 13.79,               "unit": "kilopascal" }, "name": "Air conditioning pressure"},
     {"id": "KONA_OVERHEAT_PROTECTION", "path": "Engine", "fmt": {"bix": 132, "len": 1,  "max": 1,                                   "unit": "offon"      }, "name": "Overheat protection, active"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E01D"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E01D"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_MIS_1_7E0",         "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
     {"id": "KONA_MIS_2_7E0",         "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
@@ -205,7 +205,7 @@
     {"id": "KONA_MIS_HARMFUL_CAT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 3"},
     {"id": "KONA_MIS_HARMFUL_CAT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E020"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E020"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
     {"id": "KONA_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
@@ -216,7 +216,7 @@
     {"id": "KONA_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,  "mul": 10,       "div": 65535,               "unit": "volts"      }, "name": "Waste gate voltage"},
     {"id": "KONA_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200, "mul": 200,      "div": 65535,               "unit": "percent"    }, "name": "Waste gate duty"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E023"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_FUEL_P_ACT",           "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, actual"},
     {"id": "KONA_FUEL_P_SET_POINT_7E0", "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, set point"},
