@@ -1,6 +1,16 @@
 command_id: 770.778.22BC04
 test_cases:
 - expected_values:
+    KONA_BELT_RL: 1
+    KONA_BELT_RM: 1
+    KONA_BELT_RR: 1
+    KONA_GEAR_R: 0
+    KONA_LOCK_FL: 0
+    KONA_LOCK_FR: 0
+  response: |-
+    778100B62BC04BFFEBF
+    778217800001E08AAAA
+- expected_values:
     KONA_BELT_RL: 0
     KONA_BELT_RM: 0
     KONA_BELT_RR: 1
@@ -10,16 +20,6 @@ test_cases:
   response: |-
     778100B62BC04BFFEBF
     778217800060208AAAA
-- expected_values:
-    KONA_BELT_RL: 1
-    KONA_BELT_RM: 0
-    KONA_BELT_RR: 1
-    KONA_GEAR_R: 0
-    KONA_LOCK_FL: 0
-    KONA_LOCK_FR: 0
-  response: |-
-    778100B62BC04BFFEBF
-    7782178000E0608AAAA
 - expected_values:
     KONA_BELT_RL: 0
     KONA_BELT_RM: 0
