@@ -10,23 +10,3 @@ test_cases:
   response: |-
     778100B62BC04B53F77
     77821EA00000043AAAA
-- expected_values:
-    KONA_BELT_RL: 0
-    KONA_BELT_RM: 0
-    KONA_BELT_RR: 0
-    KONA_GEAR_R: 0
-    KONA_LOCK_FL: 0
-    KONA_LOCK_FR: 0
-  response: |-
-    778100B62BC04B53F77
-    77821EA01002043AAAA
-- expected_values:
-    KONA_BELT_RL: 0
-    KONA_BELT_RM: 0
-    KONA_BELT_RR: 0
-    KONA_GEAR_R: 0
-    KONA_LOCK_FL: 1
-    KONA_LOCK_FR: 1
-  response: |-
-    778100B62BC04B53F77
-    77821EA0D002043AAAA

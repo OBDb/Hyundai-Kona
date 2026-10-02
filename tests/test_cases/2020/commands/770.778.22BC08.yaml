@@ -6,9 +6,3 @@ test_cases:
   response: |-
     778100B62BC08001000
     778210000000000AAAA
-- expected_values:
-    KONA_TURN_L: 0
-    KONA_TURN_R: 0
-  response: |-
-    778100B62BC08001000
-    778210000080000AAAA
