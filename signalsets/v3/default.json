@@ -122,7 +122,7 @@
     {"id": "KONA_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "KONA_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2021], "from": 2026 },
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020, 2021], "from": 2026 },
   "signals": [
     {"id": "KONA_WHEEL_ANGLE_ABS",    "path": "Tires",  "fmt": {"bix": 56, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Wheel turn angle, absolute"},
     {"id": "KONA_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,               "sign": true, "unit": "amps"    }, "name": "Motor-driven power steering current"}
@@ -253,7 +253,7 @@
   "signals": [
     {"id": "KONA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                        "div": 2,                                  "unit": "percent"       }, "name": "HV battery charge, dashboard",     "suggestedMetric": "stateOfCharge"},
     {"id": "KONA_HVBAT_CURR",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 3276.7,     "min": -3276.8, "div": 10, "sign": true,                   "unit": "amps"          }, "name": "HV battery current"},
@@ -278,7 +278,7 @@
     {"id": "KONA_RPM_7E4",          "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 32767,      "min": -32768,             "sign": true,                   "unit": "rpm"           }, "name": "Drive motor speed"},
     {"id": "KONA_ISO_R",            "path": "Battery", "fmt": {"bix": 456, "len": 16, "max": 65535,                                                                 "unit": "kiloohms"      }, "name": "Isolation resistance"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_CELL_V_001", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 001"},
     {"id": "KONA_CELL_V_002", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 002"},
@@ -313,7 +313,7 @@
     {"id": "KONA_CELL_V_031", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 031"},
     {"id": "KONA_CELL_V_032", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 032"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_CELL_V_033", "path": "Battery.Cells", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 033"},
     {"id": "KONA_CELL_V_034", "path": "Battery.Cells", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 034"},
@@ -348,7 +348,7 @@
     {"id": "KONA_CELL_V_063", "path": "Battery.Cells", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 063"},
     {"id": "KONA_CELL_V_064", "path": "Battery.Cells", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 064"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023], "from": 2025 },
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "KONA_HVBAT_SOH",      "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100, "div": 10, "nullmin": 0, "unit": "percent" }, "name": "HV battery state of health", "suggestedMetric": "stateOfHealth"},
     {"id": "KONA_HVBAT_SOC_DISP", "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100, "div": 2,                "unit": "percent" }, "name": "HV battery charge",          "suggestedMetric": "stateOfCharge"}
