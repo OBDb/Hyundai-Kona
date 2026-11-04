@@ -1,0 +1,8 @@
+command_id: 7E0.010C
+test_cases:
+- expected_values:
+    RPM: 2313.75
+  response: 7E804410C2427
+- expected_values:
+    RPM: 2264.25
+  response: "SEARCHING...\n7E8 04 41 0C 23 61 "
