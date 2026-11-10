@@ -128,7 +128,7 @@
     {"id": "KONA_WHEEL_ANGLE_ABS",    "path": "Tires",  "fmt": {"bix": 56, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Wheel turn angle, absolute"},
     {"id": "KONA_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,               "sign": true, "unit": "amps"    }, "name": "Motor-driven power steering current"}
   ]},
-{ "hdr": "7E0", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
     {"id": "KONA_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
@@ -153,7 +153,7 @@
     {"id": "KONA_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 3"},
     {"id": "KONA_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection Duration Cyl 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
     {"id": "KONA_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
@@ -181,21 +181,21 @@
     {"id": "KONA_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
     {"id": "KONA_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E011"}, "freq": 5, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E011"}, "freq": 5, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_CLT_FAN_PWM",         "path": "Engine", "fmt": {"bix": 88,  "len": 16, "max": 99.67,   "mul": 15.21, "div": 10000, "unit": "percent"    }, "name": "Coolant fan PWM"},
     {"id": "KONA_AC_P",                "path": "Engine", "fmt": {"bix": 112, "len": 8,  "max": 3516.45, "mul": 13.79,               "unit": "kilopascal" }, "name": "Air conditioning pressure"},
     {"id": "KONA_OVERHEAT_PROTECTION", "path": "Engine", "fmt": {"bix": 132, "len": 1,  "max": 1,                                   "unit": "offon"      }, "name": "Overheat protection, active"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E01D"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E01D"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_MIS_1_7E0",         "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
     {"id": "KONA_MIS_2_7E0",         "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
@@ -206,18 +206,18 @@
     {"id": "KONA_MIS_HARMFUL_CAT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 3"},
     {"id": "KONA_MIS_HARMFUL_CAT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E020"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E020"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
     {"id": "KONA_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 543, "mul": 0.008291,               "nullmin": 0, "unit": "kilopascal" }, "name": "Turbo boost pressure, absolute"},
     {"id": "KONA_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,  "mul": 10,       "div": 65535,               "unit": "volts"      }, "name": "Waste gate voltage"},
     {"id": "KONA_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200, "mul": 200,      "div": 65535,               "unit": "percent"    }, "name": "Waste gate duty"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_FUEL_P_ACT",           "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, actual"},
     {"id": "KONA_FUEL_P_SET_POINT_7E0", "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true,   "max": 347774.5845,                      "mul": 53067, "div": 10000,                                 "unit": "unknown"      },                                "name": "Fuel pressure, set point"},
@@ -236,7 +236,7 @@
     {"id": "KONA_INJ_IMPULSE_3_CYL_4",  "path": "Engine", "fmt": {"bix": 376, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 4"},
     {"id": "KONA_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2023, "years": [2025], "from": 2027 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_RPM",                                 "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                           "div": 4,                              "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "KONA_VSS_7E1",                             "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                                       "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
