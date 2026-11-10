@@ -236,7 +236,7 @@
     {"id": "KONA_INJ_IMPULSE_3_CYL_4",  "path": "Engine", "fmt": {"bix": 376, "len": 16, "blsb": true,   "max": 2621.4,                                         "div": 25,                                    "unit": "milliseconds" },                                "name": "Injection impulse 3, cylinder 4"},
     {"id": "KONA_CYCLE_FUEL_CONS",      "path": "Fuel",   "fmt": {"bix": 416, "len": 8,  "max": 21.6189,                     "mul": 8.478,        "div": 100,                               "unit": "unknown" },                     "name": "Cycle fuel consumption"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 0.25, "dbgfilter": { "to": 2021, "years": [2023, 2025], "from": 2027 },
   "signals": [
     {"id": "KONA_RPM",                                 "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                           "div": 4,                              "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "KONA_VSS_7E1",                             "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                                       "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
@@ -245,10 +245,21 @@
     {"id": "KONA_OUTPUT_RPM",                          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 8191.75,  "min": -8192,             "div": 4,                "sign": true, "unit": "rpm"               }, "name": "Output speed"},
     {"id": "KONA_ATF_T",                               "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                           "add": -40,                "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
     {"id": "KONA_TORQUE_CONVERTER_SLIP",               "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,              "div": 4,   "add": -512,               "unit": "rpm"               }, "name": "Torque converter slip"},
-    {"id": "KONA_GEAR",                                "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Gear"},
-    {"id": "KONA_CURRENT_GEAR",                        "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "KONA_CURRENT_GEAR",                        "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Current gear",                             "suggestedMetric": "gear"},
     {"id": "KONA_COMMANDED_GEAR",                      "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Commanded gear"},
-    {"id": "KONA_BRAKE_PEDAL",                         "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Brake pedal"}
+    {"id": "KONA_BRAKE_PEDAL",                         "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                                       "unit": "scalar"            }, "name": "Brake pedal"},
+    {"id": "KONA_GEAR", "path": "Transmission", "name": "Gear", "suggestedMetric": "gearSelector", "fmt": {"bix": 160, "len": 8, "map": {
+          "0":  { "description": "Park",    "value": "PARK" },
+          "5":  { "description": "Drive",   "value": "DRIVE" },
+          "6":  { "description": "Neutral", "value": "NEUTRAL" },
+          "7":  { "description": "Reverse", "value": "REVERSE" },
+          "8":  { "description": "Drive",   "value": "DRIVE" },
+          "9":  { "description": "Neutral", "value": "NEUTRAL" },
+          "10": { "description": "Reverse", "value": "REVERSE" },
+          "11": { "description": "Park",    "value": "PARK" },
+          "12": { "description": "Manual",  "value": "MANUAL" }
+        }}
+    }
   ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
