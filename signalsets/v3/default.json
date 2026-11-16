@@ -143,7 +143,7 @@
   "signals": [
     {"id": "KONA_BATTERY_V",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                "nullmin": 0, "unit": "volts"   }, "name": "Battery voltage"},
     {"id": "KONA_BATTERY_V_AFTER_IGNITION", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,      "mul": 17.37, "div": 255,                "nullmin": 0, "unit": "volts"   }, "name": "Battery voltage after ignition"},
-    {"id": "KONA_INTAKE_TEMP",              "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,               "unit": "celsius" }, "name": "Intake Air Temperature"},
+    {"id": "KONA_INTAKE_TEMP",              "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,               "unit": "celsius" }, "name": "Intake Air Temperature",         "suggestedMetric": "intakeAirTemperature"},
     {"id": "KONA_OIL_TEMP",                 "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,               "div": 1.3333, "add": -48,               "unit": "celsius" }, "name": "Engine Oil Temperature",         "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2027 },
