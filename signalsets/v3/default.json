@@ -30,7 +30,7 @@
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021], "from": 2027 },
   "signals": [
     {"id": "KONA_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "KONA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+    {"id": "KONA_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 2,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021], "from": 2024 },
   "signals": [
@@ -263,7 +263,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "KONA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12v battery charge"}
+    {"id": "KONA_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "12v battery charge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0101"}, "freq": 1, "filter": { "from": 2021 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
